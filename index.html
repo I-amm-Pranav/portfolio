@@ -1,14 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>MY RESUME</title>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pranav's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/84c4e0c06e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="#" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>Hi, I'm <span>Pranav</span><br />From India</h1>
+        </div>
+      </div>
+    </div>
+    <!--------------about--------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="#" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am a passionate and motivated full stack developer eager to
+              start my career in the tech industry. With a solid foundation in
+              both front-end and back-end technologies, I am dedicated to
+              building dynamic and responsive web applications.I am enthusiastic
+              about leveraging my skills to contribute to innovative projects
+              and collaborate with talented teams. Let's connect and create
+              impactful solutions together!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>Cloud Services</span><br />Basic Azure/AWS Services
+                </li>
+                <li>
+                  <span>Software Development</span><br />Building Windows
+                  Software
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2025</span><br />BE - CSE From Nandha Engineering
+                  College<br />Percentage : 86.61% (Until 6th SEM)
+                </li>
+                <li>
+                  <span>2021</span><br />Higher Secondary From Nirmala Matha
+                  Higher Secondary School<br />Percentage : 89.91%
+                </li>
+                <li>
+                  <span>2019</span><br />Secondary From Nirmala Matha Higher
+                  Secondary School<br />Percentage : 83%
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>01/09/2022 to 31/10/2022</span><br />Cloud
+                  Engineer(Intern) in Aican Automate
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <body>
-        <h1>Pranav's Portfolio</h1>
-        <h2>I am a Web Developer</h2>
-        <hr >
-    </body>
-    
+    <!-------------------services--------------->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Certificates</h1>
+        <div class="service-list">
+          <div>
+            <h2>&lt;/Leet Code&gt;</h2>
+            <a href="#"><img class="clogo1" src="images/leetcode.svg" /></a>
+          </div>
+          <div>
+            <h2>&lt;/Hacker Rank&gt;</h2>
+            <a href="#"><img class="clogo2" src="images/hackerrank.svg" /></a>
+          </div>
+          <div>
+            <h2>&lt;/Udemy&gt;</h2>
+            <a href="#"><img class="clogo3" src="images/udemy.svg" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------portfolio-------------->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Acounting Solutions Website</h3>
+              <p>
+                A commercial website for a private accounting service company
+              </p>
+              <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Image Recognition Service</h3>
+              <p>Computer Vision service using azure cloud and Python</p>
+              <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Cloud Web Hosting</h3>
+              <p>Static web hosting using Azure BLOB storage</p>
+              <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Number Guessing Game</h3>
+              <p>Simple number guessing game using JS and hosted in cloud</p>
+              <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Bank Management System</h3>
+              <p>
+                A banking software developed using java and mysql as database in
+                netbeans
+              </p>
+              <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Boiler Tank Temperature Monitoring System</h3>
+              <p>
+                An IOT environment which detects the temperature in boiler tanks
+                and monitored via mobile app known as Blynk IOT
+              </p>
+              <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-------------contact------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>pranav.itsmee@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>9363171220</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/MY CV.pdf" download class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Pranav. <i class="fa-solid fa-heart"></i></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>
